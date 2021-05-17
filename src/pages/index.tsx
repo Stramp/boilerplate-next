@@ -1,5 +1,4 @@
 import Head from 'next/head'
-const sd = 'sasdas'
 export default function Home() {
   return (
     <div className="container">
