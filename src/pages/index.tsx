@@ -1,9 +1,5 @@
-import styled from 'styled-components'
-
-const Teste = styled.h1`
-  background: red;
-`
+import Main from 'components/Main'
 
 export default function Home() {
-  return <Teste>oi</Teste>
+  return <Main />
 }

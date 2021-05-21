@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import Main from '.'
 
-render(<Main />)
+render(<Main text="MAIN" />)
 
 test('teste', () => {
-  expect(screen.getByText('teste'))
+  expect(screen.getByText('MAIN'))
 })
