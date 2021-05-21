@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Main from '.'
 
-render(<Main />)
+const { container } = render(<Main />)
 
 test('teste', () => {
-  expect(screen.getByText('Next.js!'))
+  expect(container.firstChild).toBeInTheDocument()
+  expect(container.firstChild).toHaveStyle({ background: 'red' })
 })
