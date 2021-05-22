@@ -1,5 +1,11 @@
-import Main from 'components/Main'
+import Header from 'components/Header'
+import Stage from 'components/Stage'
 
 export default function Home() {
-  return <Main />
+  return (
+    <>
+      <Header />
+      <Stage />
+    </>
+  )
 }
