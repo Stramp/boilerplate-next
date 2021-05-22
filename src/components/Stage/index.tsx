@@ -1,11 +1,11 @@
 import * as S from './styles'
 
-const Main = () => {
+const Stage = () => {
   return (
     <S.Box>
-      <h1>Main</h1>
+      <h1>Stage</h1>
     </S.Box>
   )
 }
 
-export default Main
+export default Stage
