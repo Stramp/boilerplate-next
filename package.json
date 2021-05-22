@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
-    "test": "jest",
     "tscheck": "tsc --project tsconfig.json --noEmit",
-    "test:wt": "jest --watch",
     "generate": "yarn plop --plopfile generators/plopfile.js",
+    "test": "jest --maxWorkers=50%",
+    "test:wt": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "postinstall": "husky install"
