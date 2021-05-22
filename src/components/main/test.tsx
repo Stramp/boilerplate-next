@@ -7,5 +7,6 @@ describe('<Main />', () => {
     const { container } = renderWithTheme(<Main />)
 
     expect(container.firstChild).toBeInTheDocument()
+    expect(container.firstChild).toHaveStyleRule('color', '#fff')
   })
 })
